@@ -1,0 +1,18 @@
+<div class="container">
+    <div class=" flex">
+        <div class="travel-image">
+            <img class="image {{if @isDetail "long"}}" src="{{@place.image}}" alt="">
+        </div>
+        <div class="travel-header pl-3">
+            <h2>{{@place.name}}</h2>
+
+            <p class="pt-2">{{@place.short_description}}</p>
+
+        </div>
+    </div>
+    <hr>
+    {{#if @isDetail}}
+        <Travel::Details @place={{@place}} />
+    {{/if}}
+</div>
+

@@ -1,0 +1,19 @@
+
+<section >
+    <div class="add-section">
+        <button class="btn btn-outline-success float-right mx-3 my-2" type="submit">Add</button>   
+    </div>
+</section>
+
+<section>
+    {{#each this.touristSpots as |place|}}
+        <LinkTo @route="place" @model={{place.id}} style="text-decoration:inherit;color:black">
+            <Travel @isDetail={{this.isDetail}} @place={{place}}  />
+        </LinkTo>
+        
+    {{/each}}
+    {{!-- <Travel /> --}}
+{{!-- {{this.touristSpots}} --}}
+</section>
+
+{{!-- <Input class="form-control " style="width: 250px;"/> --}}

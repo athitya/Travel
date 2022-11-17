@@ -1,0 +1,20 @@
+.add-section{
+    min-height: 55px;
+}
+.travel-image .image{
+    max-height: 150px;
+    max-width: 250px;
+    min-height: 150px;
+    min-width: 250px;
+}
+.travel-image .large{
+    max-height: 1150px;
+    max-width: 2501px;
+}
+.flex{
+    display: flex;
+}
+.link-as-normal{
+    text-decoration: inherit;
+    color: black;
+}
